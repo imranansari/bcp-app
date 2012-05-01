@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/themes/Bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css">
+
+<link href="sass_css/app.css" rel="stylesheet" type="text/css">
+
+<!-- The Templates -->
+<script type="text/template" id="home">
+
+  <div data-role="header" data-theme="a">
+    <h1>BCP Field Contacts Online</h1>
+  </div>
+  <!-- /header -->
+
+
+  <div data-role="content" data-theme="a">
+    <div class="content-primary">
+
+      <form>
+        <ul data-role="listview">
+
+
+          <li>
+            <div style="padding-bottom:5px;">
+              <select style="width:99%" id="state">
+                <option value="0">Select State</option>
+                <option value="NC">NC</option>
+                <option value="NY">NY</option>
+              </select>
+            </div>
+            <div style="padding-bottom:5px;">
+              <select style="width:99%" id="city">
+                <option value="0">Select City</option>
+                <option value="NC">Greensboro</option>
+                <option value="NY">Durham</option>
+              </select>
+            </div>
+            <select style="width:99%" id="office">
+              <option value="0">Select Office</option>
+              <option value="NC">Office1</option>
+              <option value="NY">Office2</option>
+            </select>
+          </li>
+
+          <li>
+            <span>Filter</span>
+            <input type="text" name="development" id="firstName" placeholder="First Name" value=""/>
+
+            <input type="tel" name="lot" id="lastname" placeholder="Last Name" value=""/>
+
+
+            <fieldset data-role="controlgroup">
+              <input type="radio" name="topHandrailStyle" id="Imperial" class="custom" checked="checked"/>
+              <label for="Imperial">Active</label>
+
+              <input type="radio" name="topHandrailStyle" id="5000_Classic" class="custom"/>
+              <label for="5000_Classic">Inactive</label>
+            </fieldset>
+
+          </li>
+
+
+        </ul>
+
+      </form>
+      <button type="submit" id="testButton" class="btn-large btn-primary" style="width:100%;" data-role="none">Search</button>
+
+    </div>
+    <!--/content-primary -->
+
+  </div>
+  <!-- /content -->
+
+
+</script>
+
+<script type="text/template" id="page1">
+
+  <div data-role="header">
+    <a href="#" data-icon="back" data-iconpos="notext" class="back ui-btn-left">Back</a>
+
+    <h1>Page 1</h1>
+    <a href="#page2" data-icon="forward" data-iconpos="notext" data-transition="slide">Next</a>
+  </div>
+
+  <div data-role="content" data-theme="a">
+    <div class="content-primary">
+      <form>
+        <ul data-role="listview">
+          <li>
+            <label for="builder">Builder:</label>
+            <input type="text" name="builder" id="builder" value=""/>
+          </li>
+          <li>
+            <label for="development">Development:</label>
+            <input type="text" name="development" id="development" value=""/>
+          </li>
+
+          <li>
+            <label for="lot">Lot Number:</label>
+            <input type="tel" name="lot" id="lot" value=""/>
+          </li>
+
+          <li>
+            <fieldset data-role="controlgroup">
+              <legend>Color:</legend>
+              <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom"/>
+              <label for="checkbox-1a">White</label>
+
+              <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom"/>
+              <label for="checkbox-2a">Clay</label>
+
+              <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom"/>
+              <label for="checkbox-3a">Black</label>
+
+              <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom"/>
+              <label for="checkbox-3a">Warm Beige</label>
+
+            </fieldset>
+          </li>
+
+          <li>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>Railing Height:</legend>
+              <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom"/>
+              <label for="checkbox-1a">32"</label>
+
+              <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom"/>
+              <label for="checkbox-2a">36"</label>
+
+              <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom"/>
+              <label for="checkbox-3a">43"</label>
+
+            </fieldset>
+          </li>
+
+          <!--      <li>
+            <fieldset data-role="controlgroup">
+              <legend>Top Handrail Style:</legend>
+              <input type="radio" name="topHandrailStyle" id="Imperial" class="custom" checked="checked"/>
+              <label for="Imperial">Imperial</label>
+
+              <input type="radio" name="topHandrailStyle" id="5000_Classic" class="custom"/>
+              <label for="5000_Classic">5000/Classic</label>
+
+              <input type="radio" name="topHandrailStyle" id="5000_Commercial" class="custom"/>
+              <label for="5000_Commercial">5000/Commercial</label>
+
+              <input type="radio" name="topHandrailStyle" id="1200_Economic" class="custom"/>
+              <label for="1200_Economic">1200/Economic</label>
+
+              <input type="radio" name="topHandrailStyle" id="1150_Contractor" class="custom"/>
+              <label for="1150_Contractor">1150/Contractor</label>
+
+              <input type="radio" name="topHandrailStyle" id="1100_Contractor" class="custom"/>
+              <label for="1100_Contractor">1100/Contractor</label>
+
+            </fieldset>
+          </li>-->
+
+
+          <li>
+            <label for="topHandrailStyle" class="select">Top Handrail Style:</label>
+            <select name="topHandrailStyle" id="topHandrailStyle">
+              <option value="Imperial">Imperial</option>
+              <option value="5000_Classic">5000/Classic</option>
+              <option value="5000_Commercial">5000/Commercial</option>
+              <option value="1200_Economic">1200/Economic</option>
+              <option value="1150_Contractor">1150/Contractor</option>
+              <option value="1100_Contractor">1100/Contractor</option>
+            </select>
+          </li>
+
+
+          <li class="ui-body ui-body-b">
+            <fieldset class="ui-grid-a">
+              <div class="ui-block-a">
+                <button type="submit" data-theme="a">Cancel</button>
+              </div>
+              <div class="ui-block-b">
+                <button type="submit" data-theme="d">Submit</button>
+              </div>
+            </fieldset>
+          </li>
+
+        </ul>
+
+      </form>
+
+    </div>
+    <!--/content-primary -->
+
+
+  </div>
+
+  <div data-role="fieldcontain">
+    <label for="name">Text Input:</label>
+    <input type="text" name="name" id="name" value=""/>
+  </div>
+
+  <a href="#" id="dialoglink" data-role="button">Open Dialog</a>
+
+</script>
+
+<script type="text/template" id="page2">
+
+  <div data-role="header">
+    <a href="#" data-icon="back" data-iconpos="notext" class="back ui-btn-left">Back</a>
+
+    <h1>Page 2</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is Page 2. It was created dynamically using an underscore.js template.</p>
+
+    <p>Navigate to:</p>
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#">Home</a></li>
+      <li><a href="#page1">Page 1</a></li>
+    </ul>
+  </div>
+
+</script>
+
+<!-- The Scripts -->
+<script src="javascripts/lib/jquery-1.7.1.min.js"></script>
+<script src="javascripts/jqm-config.js"></script>
+<script src="javascripts/lib/jquery.mobile-1.1.0.js"></script>
+<script src="javascripts/lib/underscore-min.js"></script>
+<script src="javascripts/lib/backbone-min.js"></script>
+<script src="javascripts/main.js"></script>
+</head>
+
+<body></body>
+
+</html>

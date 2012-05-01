@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/Bootstrap.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css">
+
+  <!-- The Templates -->
+  <script type="text/template" id="home">
+
+    <div data-role="header">
+      <h1>Backbone.js + jQuery Mobile</h1>
+    </div>
+
+    <div data-role="content">
+      <h3>Application Template for using Backbone.js and jQuery Mobile.</h3>
+
+      <p>Backbone.js is used for code organization (Models, Views) and "routing".</p>
+
+      <p>jQuery Mobile is used for its mobile styles and widgets. The routing and navigation capabilities of jQuery
+        Mobile are disbled to let Backbone.js handle these requirements.</p>
+
+      <p>This is the Home page. It was created dynamically using an underscore.js template.</p>
+
+      <p>Navigate to:</p>
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#page1">Page 1</a></li>
+        <li><a href="#page2">Page 2</a></li>
+      </ul>
+    </div>
+
+  </script>
+
+  <script type="text/template" id="page1">
+
+    <div data-role="header">
+      <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+
+      <h1>Page 1</h1>
+    </div>
+
+    <div data-role="content" data-theme="a">
+      <p>This is Page 1. It was created dynamically using an underscore.js template.</p>
+
+      <p>Navigate to:</p>
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">Home</a></li>
+        <li><a href="#page2">Page 2</a></li>
+      </ul>
+      <label for="flip-a">Select slider:</label>
+      <select name="slider" id="flip-a" data-role="slider" data-mini="true" data-theme="a">
+        <option value="off" data-theme="a">Off</option>
+        <option value="on" data-theme="a">On</option>
+      </select>
+
+      <a href="index.html" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Swatch A</span></span></a>
+
+
+      <fieldset data-role="controlgroup">
+        <legend>Choose a pet:</legend>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked"/>
+        <label for="radio-choice-1">Cat</label>
+
+        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"/>
+        <label for="radio-choice-2">Dog</label>
+
+        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"/>
+        <label for="radio-choice-3">Hamster</label>
+
+        <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"/>
+        <label for="radio-choice-4">Lizard</label>
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+        <legend>Choose a pet:</legend>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked"/>
+        <label for="radio-choice-1">Cat</label>
+
+        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"/>
+        <label for="radio-choice-2">Dog</label>
+
+        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"/>
+        <label for="radio-choice-3">Hamster</label>
+
+        <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"/>
+        <label for="radio-choice-4">Lizard</label>
+      </fieldset>
+
+      <label for="search-basic">Search Input:</label>
+      <input type="search" name="search" id="searc-basic" value=""/>
+
+      <label for="select-choice-0" class="select">Shipping method:</label>
+      <select name="select-choice-0" id="select-choice-1">
+        <option value="standard">Standard: 7 day</option>
+        <option value="rush">Rush: 3 days</option>
+        <option value="express">Express: next day</option>
+        <option value="overnight">Overnight</option>
+      </select>
+
+      <label for="slider-0">Input slider:</label>
+      <input type="range" name="slider" id="slider-0" value="60" min="0" max="100"/>
+
+    </div>
+
+    <div data-role="fieldcontain">
+      <label for="name">Text Input:</label>
+      <input type="text" name="name" id="name" value=""/>
+    </div>
+
+    <a href="#" id="dialoglink" data-role="button">Open Dialog</a>
+
+  </script>
+
+  <script type="text/template" id="page2">
+
+    <div data-role="header">
+      <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+
+      <h1>Page 2</h1>
+    </div>
+
+    <div data-role="content">
+      <p>This is Page 2. It was created dynamically using an underscore.js template.</p>
+
+      <p>Navigate to:</p>
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">Home</a></li>
+        <li><a href="#page1">Page 1</a></li>
+      </ul>
+    </div>
+
+  </script>
+
+  <!-- The Scripts -->
+  <script src="javascripts/lib/jquery-1.7.1.min.js"></script>
+  <script src="javascripts/jqm-config.js"></script>
+  <script src="javascripts/lib/jquery.mobile-1.1.0.js"></script>
+  <script src="javascripts/lib/underscore-min.js"></script>
+  <script src="javascripts/lib/backbone-min.js"></script>
+  <script src="javascripts/main.js"></script>
+</head>
+
+<body></body>
+
+</html>

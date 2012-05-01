@@ -1,0 +1,308 @@
+body {
+  //background-color: #f5f5f5;
+}
+
+header {
+  position: relative;
+//z-index: 2;
+//top: 10px;
+  padding-top: 10px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+//font-size: 20px;
+ text-align: center;
+
+  background-color: #e3e3e3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(250, 250, 250)), to(rgb(204, 204, 204)));
+  background-image: -webkit-linear-gradient(top, rgb(250, 250, 250), rgb(204, 204, 204));
+
+//background-color: #8f9325;
+//background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(100, 105, 23)), to(rgb(186, 190, 51)));
+//background-image: -webkit-linear-gradient(top, rgb(100, 105, 23), rgb(186, 190, 51)); color: #666d16;
+
+
+//line-height: 45px;
+
+}
+
+
+.brandName{
+  color: #ff4500;
+  text-align: center;
+  font-family: 'Chicle', cursive;
+  font-size: 40px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brandMotto{
+  top: -20px;
+  position: relative;
+  padding-left: 15px;
+  font-family: 'Chicle';
+  font-size: 20px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  //bottom: 50px;
+  left: 0;
+  width: 100%;
+  background: white;
+  overflow: auto;
+}
+
+
+.mainContent {
+  font-size: 120%;
+  padding: 5px;
+}
+
+.response {
+  color: #000000;
+  font-family: 'Chicle', cursive;
+  font-size: 180%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+[class^="icon-"] {
+  background-image: url(/images/glyphicons-halflings.png);
+}
+
+#projects {
+
+  ul{
+    list-style:none;
+    margin: 0px;
+  }
+
+}
+
+.project_details_panel{
+  ul{
+    list-style:none;
+    margin: 0px;
+  }
+}
+
+//ribbon
+
+.wrapper {
+//margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 90;
+  min-height: 620px !important;
+}
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-Production {
+  font: bold 13px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-Development {
+  font: bold 13px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #32aeea;
+  background-image: -webkit-gradient(radial, 100% 50%,100,-50% 50%,100, from(rgb(18, 166, 221)), to(rgb(50, 174, 234)));
+  background-image: -webkit-radial-gradient(0% 50%, rgb(50, 174, 234), rgb(18, 166, 221));
+
+  color: white;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-Testing {
+  font: bold 13px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #f8f4d7;
+  background-image: -webkit-gradient(radial, 50% 0%,100,50% 150%,100, from(rgb(226, 203, 156)), to(rgb(248, 244, 215)));
+  background-image: -webkit-radial-gradient(50% 100%, rgb(248, 244, 215), rgb(226, 203, 156));
+
+
+  color: black;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.ribbon-Definition {
+  font: bold 13px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+
+  background-color: #ffffff;
+  background-image: -webkit-gradient(radial, 50% 0%,100,50% 150%,100, from(rgb(204, 204, 204)), to(rgb(255, 255, 255)));
+  background-image: -webkit-radial-gradient(50% 100%, rgb(255, 255, 255), rgb(204, 204, 204));
+
+  color: #000000;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-Development:before, .ribbon-Development:after {
+  content: "";
+  border-top: 3px solid #0033cc;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  bottom: -3px;
+}
+
+.ribbon-Production:before, .ribbon-Production:after {
+  content: "";
+  border-top: 3px solid #6e8900;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  bottom: -3px;
+}
+
+.ribbon-Testing:before, .ribbon-Testing:after {
+  content: "";
+  border-top: 3px solid #f8f4d7;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  bottom: -3px;
+}
+.ribbon-Definition:before, .ribbon-Definition:after {
+  content: "";
+  border-top: 3px solid #6e8900;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  bottom: -3px;
+}
+
+.wrapper .title {
+  font: bold 15px Sans-Serif;
+  color: white;
+  padding-top: 8px;
+  padding-left: 4px;
+
+}
+
+.ribbon-Production:before {
+  left: 0;
+}
+
+.ribbon-Production:after {
+  right: 0;
+}
+
+.ribbon-Development:before {
+  left: 0;
+}
+
+.ribbon-Development:after {
+  right: 0;
+}
+
+.ribbon-Testing:before {
+  left: 0;
+}
+
+.ribbon-Testing:after {
+  right: 0;
+}
+
+.ribbon-Definition:before {
+  left: 0;
+}
+
+.ribbon-Definition:after {
+  right: 0;
+}
+
+#projects  li{
+  padding-bottom: 15px;
+}
+
+#components .ribbon-Production {
+  //margin: 50px auto;
+  width: 160px;
+  height: 90px;
+}
+
+
+
+.ui-header .ui-title, .ui-footer .ui-title {
+
+margin-left: 0;
+margin-right: 0;
+   /* text-overflow:visble;  */ /* -Uncomment - to disable Ellipsis completely use with Caution- !*/
+
+}
