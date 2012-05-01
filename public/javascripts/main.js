@@ -8,9 +8,9 @@ window.HomeView = Backbone.View.extend({
     }
 });
 
-window.Page1View = Backbone.View.extend({
+window.SearchResultsView = Backbone.View.extend({
 
-    template:_.template($('#page1').html()),
+    template:_.template($('#searchResults').html()),
 
     render:function (eventName) {
         $(this.el).html(this.template());
@@ -32,7 +32,7 @@ var AppRouter = Backbone.Router.extend({
 
     routes:{
         "":"home",
-        "page1":"page1",
+        "searchResults":"searchResults",
         "page2":"page2"
     },
 
@@ -50,9 +50,9 @@ var AppRouter = Backbone.Router.extend({
         this.changePage(new HomeView());
     },
 
-    page1:function () {
+    searchResults:function () {
         console.log('#page1');
-        this.changePage(new Page1View());
+        this.changePage(new SearchResultsView());
     },
 
     page2:function () {
@@ -98,6 +98,10 @@ $(document).ready(function () {
     $(".swipableRow").live('taphold',function(){
         alert('tap hold');
 
+    });
+
+    $("#search").live('click',function(){
+        app.navigate("searchResults", {trigger: true});
     });
 
 });
